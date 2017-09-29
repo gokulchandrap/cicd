@@ -11,8 +11,8 @@
       github:
         - status: "Failure"
 
-- project
-    name: theopenlab-cicd
+- project:
+    name: theopenlab/cicd
     check:
       jobs:
         - tox-sample
