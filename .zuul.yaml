@@ -11,7 +11,7 @@
       github:
         - status: "Failure"
 
-- project
+- project:
     name: theopenlab/cicd
     check:
       jobs:
