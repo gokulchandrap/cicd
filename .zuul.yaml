@@ -12,7 +12,7 @@
         - status: "Failure"
 
 - project
-    name: theopenlab/cicd
+    name: theopenlab-cicd
     check:
       jobs:
         - tox-sample
