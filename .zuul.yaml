@@ -1,6 +1,9 @@
 - pipeline:
     name: check
     manager: independent
+    trigger:
+      github:
+        - event: pull_request
 
 - project:
     name: theopenlab/cicd
