@@ -1,5 +1,6 @@
 - project:
-    name: theopenlab/cicd
-    check:
-      jobs:
-        - tox-sample
+  name: theopenlab/cicd
+  check:
+    jobs:
+      - cicd-functional
+      - tox-sample
