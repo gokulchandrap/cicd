@@ -4,12 +4,6 @@
     trigger:
       github:
         - event: pull_request
-    success:
-      github:
-        - status: success
-    failure:
-      github:
-        - status: failure
 
 - project:
     name: theopenlab/cicd
