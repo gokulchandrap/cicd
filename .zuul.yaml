@@ -1,4 +1,17 @@
-- project:
+- pipeline:
+    name: check
+    manager: independent
+    trigger:
+      github:
+        - event: pull_request
+    success:
+      github:
+        - status: "Success"
+    failure:
+      github:
+        - status: "Failure"
+
+- project
     name: theopenlab/cicd
     check:
       jobs:
