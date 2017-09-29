@@ -6,10 +6,10 @@
         - event: pull_request
     success:
       github:
-        - status: "Success"
+        - status: success
     failure:
       github:
-        - status: "Failure"
+        - status: failure
 
 - project:
     name: theopenlab/cicd
