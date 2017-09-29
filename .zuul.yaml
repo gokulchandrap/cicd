@@ -2,5 +2,4 @@
   name: theopenlab/cicd
   check:
     jobs:
-      - cicd-functional
-      - tox-sample
+      - tox-pep8
