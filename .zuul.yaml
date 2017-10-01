@@ -1,1 +1,5 @@
-
+- project:
+    name: theopenlab/cicd
+    check:
+      jobs:
+        - base
