@@ -1,5 +1,0 @@
-- project:
-    name: theopenlab/cicd
-    check:
-      jobs:
-        - noop
