@@ -1,5 +1,5 @@
 - project:
     name: theopenlab/cicd
-      check:
-        jobs:
-          - tox-pep8
+    check:
+      jobs:
+        - tox-simple
