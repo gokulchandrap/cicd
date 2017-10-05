@@ -2,4 +2,4 @@
     name: theopenlab/cicd
     check:
       jobs:
-        - validate-host
+        - noop
