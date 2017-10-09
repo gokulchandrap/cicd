@@ -2,4 +2,4 @@
     name: theopenlab/cicd
     check:
       jobs:
-        - noop
+        - base
