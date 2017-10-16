@@ -4,6 +4,9 @@
       jobs:
         - simple
         - wordpress-ansible
+    overcommit:
+      jobs:
+        - wordpress-ansible
 
 - job:
     name: wordpress-ansible
