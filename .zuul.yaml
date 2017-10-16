@@ -3,3 +3,4 @@
     check:
       jobs:
         - simple
+        - wordpress-ansible
