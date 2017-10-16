@@ -1,13 +1,13 @@
 ---
 - name: Download WordPress
   get_url:
-    url=https://wordpress.org/latest.tar.gz
-    dest=./wordpress.tar.gz
+    url=https://wordpress.org/latest.zip
+    dest=./wordpress.zip
     validate_certs=no
 
 - name: Extract WordPress
   unarchive:
-    src=./wordpress.tar.gz
+    src=./wordpress.zip
     dest=/var/www/
     copy=no 
 
