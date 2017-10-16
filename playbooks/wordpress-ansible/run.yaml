@@ -1,0 +1,8 @@
+- name: Setup wordpress
+  hosts: all
+
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
