@@ -1,5 +1,6 @@
 - name: Setup wordpress
   hosts: all
+  become: yes
 
   roles:
     - server
