@@ -4,3 +4,9 @@
       jobs:
         - simple
         - wordpress-ansible
+
+- job:
+    name: wordpress-ansible
+    description: |
+      Create wordpress LAMP stack
+    run: playbooks/wordpress-ansible/run
