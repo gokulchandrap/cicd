@@ -3,6 +3,7 @@
     check:
       jobs:
         - wordpress-ansible
+        - isstreamworking
 
 - job:
     name: wordpress-ansible
@@ -14,4 +15,3 @@
     name: isstreamworking
     description: |
       Output to check if stream is working
-    run: playbooks/isstreamworking
