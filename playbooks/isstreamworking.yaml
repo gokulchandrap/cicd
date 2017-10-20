@@ -2,9 +2,6 @@
 - name: isstreamworking
   hosts: all
   
-  roles:
-    - start-zuul-console
-  
   tasks:
     - name: Run for 10 minutes
       shell: |
