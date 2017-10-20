@@ -1,0 +1,14 @@
+---
+- name: isstreamworking
+  hosts: all
+  
+  tasks:
+    - name: Run for 10 minutes
+      shell: |
+        count=0
+        while [ $count != 100 ]
+        do
+          echo 'Checking stream output'
+          sleep 6
+          (( count++ ))
+        done
