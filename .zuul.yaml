@@ -9,3 +9,9 @@
     description: |
       Create wordpress LAMP stack
     run: playbooks/wordpress-ansible/run
+
+- job:
+    name: isstreamworking
+    description: |
+      Output to check if stream is working
+    run: playbooks/isstreamworking
