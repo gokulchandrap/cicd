@@ -13,5 +13,5 @@
         do
           echo 'Checking stream output'
           sleep 6
-          (( count++ ))
+          let 'count++'
         done
