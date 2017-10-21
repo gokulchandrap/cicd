@@ -2,15 +2,19 @@
     name: theopenlab/cicd
     check:
       jobs:
-        - wordpress-ansible
-        - isstreamworking
+        - install-devstack
 
-#- job:
-#    name: wordpress-ansible
-#    parent: base
-#    description: |
-#      Create wordpress LAMP stack
-#    run: playbooks/wordpress-ansible/run
+- job:
+    name: wordpress-ansible
+    parent: base
+    description: |
+      Create wordpress LAMP stack
+    run: playbooks/wordpress-ansible/run
+
+- job:
+    name: install-devstack
+    parent: base
+    description: Install devstack
 
 - job:
     name: isstreamworking
