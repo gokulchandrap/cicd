@@ -5,12 +5,12 @@
         - wordpress-ansible
         - isstreamworking
 
-- job:
-    name: wordpress-ansible
-    parent: base
-    description: |
-      Create wordpress LAMP stack
-    run: playbooks/wordpress-ansible/run
+#- job:
+#    name: wordpress-ansible
+#    parent: base
+#    description: |
+#      Create wordpress LAMP stack
+#    run: playbooks/wordpress-ansible/run
 
 - job:
     name: isstreamworking
