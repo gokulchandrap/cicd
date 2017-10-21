@@ -1,0 +1,36 @@
+---
+
+- name: setup golang environment
+  hosts: all
+
+  tasks:
+    - name: clone devstack repo
+      git:
+        repo: "https://git.openstack.org/openstack-dev/devstack"
+        dest: /home/zuul
+        version: "{{ openstack_version | default(master) }}"
+
+    - name: create local.conf
+      blockinfile:
+        create: yes
+        state: present
+        dest: /home/zuul/devstack/local.conf
+        block: |
+          [[local|localrc]]
+          ADMIN_PASSWORD=secret
+          DATABASE_PASSWORD=$ADMIN_PASSWORD
+          RABBIT_PASSWORD=$ADMIN_PASSWORD
+          SERVICE_PASSWORD=$ADMIN_PASSWORD
+
+    - name: start devstack install
+      shell: /home/zuul/stack.sh
+      async: 3600
+      poll: 0
+      register: devstack_install
+
+    - name: poll devstack installation
+      async_status: jid={{ devstack_install.ansible_job_id }}
+      register: devstack_install_result
+      until: devstack_install_result.finished
+      retries: 60
+      delay: 30
