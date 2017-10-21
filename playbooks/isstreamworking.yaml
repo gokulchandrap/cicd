@@ -5,10 +5,8 @@
   tasks:
     - name: Run for 10 minutes
       shell: |
-        count=0
-        while [ $count != 100 ]
+        for i in `seq 1 100`
         do
           echo 'Checking stream output'
           sleep 6
-          let 'count++'
         done
