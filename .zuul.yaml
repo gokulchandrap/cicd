@@ -2,7 +2,7 @@
     name: theopenlab/cicd
     check:
       jobs:
-        - install-devstack
+        - wordpress-ansible
 
 - job:
     name: wordpress-ansible
